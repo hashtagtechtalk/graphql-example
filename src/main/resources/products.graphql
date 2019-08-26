@@ -1,0 +1,19 @@
+schema{
+query:Query
+}
+
+
+type Query{
+allProducts:[Product]
+product(id:String):Product
+
+}
+
+type Product{
+    productId:String
+    productName:String
+    productBrand:String
+    productPrice:Float
+    productDiscount:Int
+    totalContainerBatchNumbers:[String]
+}

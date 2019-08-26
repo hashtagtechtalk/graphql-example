@@ -1,4 +1,7 @@
 package com.hashtag.techtalk.graphqlexample.repository;
 
-public class ProductRepository {
+import com.hashtag.techtalk.graphqlexample.model.Product;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ProductRepository extends JpaRepository<Product,String> {
 }
